@@ -1,0 +1,142 @@
+:root {
+    --main: rgb(155, 36, 36);
+    --second: rgb(255, 242, 242);
+    --third: rgb(176, 212, 255);
+}
+
+.bg-main {
+    background-color: var(--main);
+}
+.bg-second {
+    background-color: var(--second);
+}
+.bg-third {
+    background-color: var(--third);
+}
+
+.text-main {
+    color: var(--main);
+}
+.text-second {
+    color: var(--second);
+}
+.text-third {
+    color: var(--third);
+}
+
+.social-media {
+    border-radius: 50%;
+    background-color: white;
+    color: var(--main);
+    padding: .25rem;
+    font-size: 18px;
+}
+
+.promo-head {
+    border-bottom: 2px solid white;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    font-family: "Anton", sans-serif;
+}
+
+.promo-head h4 {
+    font-size: 80px;
+}
+.promo-head h5 {
+    font-size: 30px;
+}
+
+.moda{
+    display: flex;
+    align-items: start;
+    gap: 2rem;
+    padding: 2rem 3rem;
+    height: 100%;
+}
+.moda-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 100%;
+}
+
+
+.btn-main {
+    background-color: var(--main);
+    color: white;
+}
+.btn-main:hover {
+    background-color: var(--main);
+    color: white;
+}
+
+footer a:hover {
+    color: white;
+}
+
+
+
+/* General animations for fade-in and slide effects */
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out forwards;
+    opacity: 0;
+}
+
+.slide-in-left {
+    animation: slideInLeft 1.5s ease-out forwards;
+    opacity: 0;
+}
+
+.slide-in-right {
+    animation: slideInRight 1.5s ease-out forwards;
+    opacity: 0;
+}
+
+.zoom-in {
+    animation: zoomIn 1.5s ease-in-out forwards;
+    transform: scale(0.8);
+    opacity: 0;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
